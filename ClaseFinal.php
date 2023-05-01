@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
+
 <?php
 
 class mostrarArticulos{
@@ -26,6 +37,8 @@ class mostrarArticulos{
 				echo "<h2>" . $row["Nombre_producto"] . "</h2>";
                 echo "<h2>" . $row["Precio_producto"] . "</h2>";				
 				echo "<p>" . $row["Descripcion_producto"] . "</p>";
+				echo "<p>" . $row["Colores_producto"] . "<p>";
+				echo "<p>" . $row["Materiales_producto"] . "<p>";
 				echo "</div>";
 			}
 
@@ -37,3 +50,5 @@ class mostrarArticulos{
 }
 
 ?>
+</body>
+</html>
